@@ -11,13 +11,13 @@ spec:
         - path: "cluster-config/config.json"
   template:
     metadata:
-      name: '{{cluster.name}}-guestbook'
+      name: '{{cluster.name}}-harnessgitopslab'
     spec:
       project: default
       source:
         repoURL: https://github.com/luisredda/harness-gitops-lab.git
         targetRevision: HEAD
-        path: "apps/harnessapp"
+        path: "apps/harnessgitopslab"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
