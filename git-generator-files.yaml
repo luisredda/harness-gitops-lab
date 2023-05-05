@@ -13,7 +13,7 @@ spec:
     metadata:
       name: '{{cluster.name}}-harnessgitopslab'
     spec:
-      project: default
+      project: 8f6b3611
       source:
         repoURL: https://github.com/luisredda/harness-gitops-lab.git
         targetRevision: HEAD
