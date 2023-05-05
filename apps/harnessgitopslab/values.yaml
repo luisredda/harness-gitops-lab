@@ -1,11 +1,10 @@
-name: <+stage.variables.name>
+name: harnessgitopslab
 replicas: 1
 
-image: <+artifact.image>
-dockercfg: <+artifact.imagePullSecret>
+image: luisredda/harnessgitopslab
 
 createNamespace: true
-namespace: <+infra.namespace>
+namespace: harnessgitopslab
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
