@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: harnessgitopslab
+spec:
+  generators:
+    - git:
+        repoURL: https://github.com/luisredda/harness-gitops-lab.git
+        revision: HEAD
+        files:
+        - path: "cluster-config/config.json"
+  template:
+    metadata:
+      name: '{{cluster.name}}-guestbook'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/luisredda/harness-gitops-lab.git
+        targetRevision: HEAD
+        path: "apps/harnessapp"
+      destination:
+        server: https://kubernetes.default.svc
+        #server: '{{cluster.address}}'
+        namespace: harnessgitopslab
