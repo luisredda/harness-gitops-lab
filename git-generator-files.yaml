@@ -19,6 +19,6 @@ spec:
         targetRevision: HEAD
         path: "apps/harnessgitopslab"
       destination:
-        server: https://kubernetes.default.svc
-        #server: '{{cluster.address}}'
+        # server: https://kubernetes.default.svc
+        server: '{{cluster.address}}'
         namespace: harnessgitopslab
