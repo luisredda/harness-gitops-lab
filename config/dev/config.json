@@ -4,6 +4,6 @@
     "address" : "https://kubernetes.default.svc",
     "name" : "engineering-dev"
   },
-  "ff_key" : "abcd",
+  "ff_key" : "newone",
   "asset_id" : "11223344"
 }
