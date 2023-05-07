@@ -1,7 +1,7 @@
 name: harnessgitopslab
 replicas: 1
 
-image: luisredda/harnessgitopslab
+image: luisredda/harness-java-demo-k8s:latest
 
 createNamespace: true
 namespace: harnessgitopslab
