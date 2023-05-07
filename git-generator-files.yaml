@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/luisredda/harness-gitops-lab.git
         targetRevision: HEAD
-        path: "apps/harnessgitopslab/"
+        path: "apps/harnessgitopslab/*"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
