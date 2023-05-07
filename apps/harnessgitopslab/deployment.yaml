@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: gitopslab-deployment
 spec:
-  replicas: {{int .Values.replicas}}
+  replicas: 1
   selector:
     matchLabels:
       app: {{.Values.name}}
