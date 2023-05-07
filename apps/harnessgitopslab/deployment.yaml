@@ -13,5 +13,5 @@ spec:
         app: harnessgitopslab
     spec:
       containers:
-      - name: {{ .Values.name }}
-        image: {{ .Values.image }}
+      - name: harnessgitopslab
+        image: luisredda/harness-java-demo-k8s:latest
