@@ -8,7 +8,7 @@ spec:
         repoURL: https://github.com/luisredda/harness-gitops-lab.git
         revision: HEAD
         files:
-        - path: "config/*/config.json"
+        - path: "apps/harnessgitopslab/*"
   template:
     metadata:
       name: '{{cluster.name}}-harnessgitopslab'
