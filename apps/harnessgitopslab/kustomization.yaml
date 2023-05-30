@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - deployment.yaml
 - service.yaml
-namespace: hello-gitops
+namespace: harnessgitopslab
 images:
 - name: hello-gitops
   newName: mansong/hello-gitops
