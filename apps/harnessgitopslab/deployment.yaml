@@ -7,7 +7,7 @@ spec:
         app: "harnessgitopslab"
     spec:
       containers:
-      - image:  {{ toYaml .Values.image }}
+      - image:  {{ Values.image }}
         name: "harnessgitopslab"
   replicas: 1
   selector:
