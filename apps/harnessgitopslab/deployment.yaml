@@ -1,15 +1,15 @@
-apiVersion: "apps/v1"
-kind: "Deployment"
+apiVersion: apps/v1
+kind: Deployment
 spec:
   template:
     metadata:
       labels:
-        app: "harnessgitopslab"
+        app: harnessgitopslab
     spec:
       containers:
-      - image:  {{ Values.image }}
-        name: "harnessgitopslab"
+      - image:  hello-gitops
+        name: hello-gitops
   replicas: 1
   selector:
     matchLabels:
-      app: "harnessgitopslab"
+      app: harnessgitopslab
