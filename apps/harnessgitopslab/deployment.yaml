@@ -1,17 +1,22 @@
-apiVersion: apps/v1
-kind: Deployment
 metadata:
-  name: harnessgitopslab-deployment
+  name: "harnessgitopslab-deployment"
+  spec:
+    template:
+      spec:
+        containers:
+          image: "luisredda/harness-java-demo-k8s:latests"
+apiVersion: "apps/v1"
+kind: "Deployment"
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: harnessgitopslab
   template:
     metadata:
       labels:
-        app: harnessgitopslab
+        app: "harnessgitopslab"
     spec:
       containers:
-      - name: harnessgitopslab
-        image: luisredda/harness-java-demo-k8s:latest
+      - image: "luisredda/harness-java-demo-k8s:latest"
+        name: "harnessgitopslab"
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "harnessgitopslab"
