@@ -2,12 +2,6 @@ createNamespace: true
 serviceType: "LoadBalancer"
 serviceTargetPort: 8888
 image: "luisredda/harness-java-demo-k8s:latests"
-metadata:
-  spec:
-    template:
-      spec:
-        containers:
-          image: "luisredda/harness-java-demo-k8s:latests"
 replicas: 1
 name: "harnessgitopslab"
 namespace: "harnessgitopslab"
