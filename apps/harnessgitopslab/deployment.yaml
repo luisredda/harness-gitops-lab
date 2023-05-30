@@ -5,6 +5,7 @@ spec:
     metadata:
       labels:
         app: harnessgitopslab
+      name: harnessgitopslab
     spec:
       containers:
       - image:  hello-gitops
