@@ -1,10 +1,3 @@
-metadata:
-  name: "harnessgitopslab-deployment"
-  spec:
-    template:
-      spec:
-        containers:
-          image: "luisredda/harness-java-demo-k8s:latests"
 apiVersion: "apps/v1"
 kind: "Deployment"
 spec:
